@@ -14,3 +14,5 @@ run_list 'github_python_requests::default'
 
 # Specify a custom source for a single cookbook:
 cookbook 'github_python_requests', path: '.'
+cookbook 'python_requests', github: 'sforrester23/python_chef', branch: 'master'
+cookbook 'node', github: 'sforrester23/chef_cookbook_2', branch: 'master'

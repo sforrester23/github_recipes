@@ -17,4 +17,4 @@ chef_version '>= 14.0'
 # `View Source` link will be displayed on this cookbook's page when uploaded to
 # a Supermarket.
 #
-# source_url 'https://github.com/<insert_org_here>/github_python_requests'
+# source_url 'https://github.com/sforrester/python_chef'
