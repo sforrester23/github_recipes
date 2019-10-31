@@ -30,6 +30,18 @@ describe 'python_requests::default' do
     it 'should install requests plugin using pip management' do
       expect(chef_run).to run_execute ('install requests==2.3.0')
     end
+  end
+end
+
+describe 'node::default' do
+  context 'When all attributes are default, on Ubuntu 18.04' do
+    # for a complete list of available platforms and versions see:
+    # https://github.com/chefspec/fauxhai/blob/master/PLATFORMS.md
+    platform 'ubuntu', '18.04'
+
+    it 'converges successfully' do
+      expect { chef_run }.to_not raise_error
+    end
 
     it 'Should install nginx' do
       expect(chef_run).to install_package 'nginx'
